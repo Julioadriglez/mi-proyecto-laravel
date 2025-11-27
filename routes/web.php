@@ -13,3 +13,7 @@ Route::get('/inicial', function () {
 Route::get('/imagen', function () {
     return view('imagen');
 });
+
+Route::get('/php', function () {
+    return view('php');
+});
