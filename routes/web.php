@@ -17,9 +17,5 @@ Route::get('/imagen', function () {
 Route::get('/php', function () {
     return view('php');
 });
-Route::get('/suma', function () {
-    return view('suma');
-});
-Route::pos('/suma', function () {
-    return view('suma');
-});
+Route::get('/suma', [sumaController::class,'index']);
+Route::post('/suma', [sumaController::class,'suma']);
