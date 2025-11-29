@@ -20,3 +20,6 @@ Route::get('/php', function () {
 Route::get('/suma', function () {
     return view('suma');
 });
+Route::pos('/suma', function () {
+    return view('suma');
+});
