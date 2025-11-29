@@ -6,5 +6,13 @@ use Illuminate\Http\Request;
 
 class sumaController extends Controller
 {
-    //
+    public function index(){
+        return view('suma',['res'=>null]);
+    }
+    public function suma(Request $request){
+        $num1 = $request->input('num1');
+        $num2 = $request->input('num2');
+        $resultado = $suma1 + $suma2;
+        return view('suma',['res'=>$resultado]);
+    }
 }
