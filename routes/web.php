@@ -17,3 +17,6 @@ Route::get('/imagen', function () {
 Route::get('/php', function () {
     return view('php');
 });
+Route::get('/suma', function () {
+    return view('suma');
+});
