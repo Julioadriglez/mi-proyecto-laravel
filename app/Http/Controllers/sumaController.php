@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class sumaController extends Controller
+class SumaController extends Controller
 {
     public function index(){
         return view('suma',['res'=>null]);
@@ -12,7 +12,7 @@ class sumaController extends Controller
     public function suma(Request $request){
         $num1 = $request->input('num1');
         $num2 = $request->input('num2');
-        $resultado = $suma1 + $suma2;
-        return view('suma',['res'=>$resultado]);
+        $res = $num1 + $num2;
+        return view('suma',['res'=>$res]);
     }
 }
