@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suma</title>
 </head>
 <body>
     <h2>Sumar dos números</h2>
@@ -20,6 +21,6 @@
     <br>
     @if (isset($res))
         <h3>Resultado de la suma: {{ $res }}</h3>
-    @endif    
+    @endif
 </body>
 </html>
