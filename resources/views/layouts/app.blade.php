@@ -10,10 +10,10 @@
     <title>Proyecto</title>
 </head>
 <body style="background-color: rgb(0, 0, 0); font-family: monospace;">
-    <a href="#">Opción 1</a> | 
-    <a href="#">Opción 2</a> | 
-    <a href="#">Opción 3</a>
+    <a href="{{ route('index') }}">saludo</a>
+    <a href="{{ route('imagen') }}">imagen</a> 
+    <a href="{{ route('php') }}">php</a> 
     @yield('content')
-    <p style="color: #16C809">Hola, soy una plantilla</p>
+    <p style="color: #16C809">Hola, soy una plantilla Base</p>
 </body>
 </html>
